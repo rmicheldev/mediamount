@@ -1,0 +1,6 @@
+[Unit]
+Description=Automatically mount media devices
+
+[Service]
+Type=oneshot
+ExecStart=/etc/automount/mountdrive.sh %i

@@ -1,0 +1,1 @@
+ACTION=="add", KERNEL=="sd[b-z][0-9]", SUBSYSTEMS=="usb", ENV{SYSTEMD_WANTS}="pendrive-attach@'$env{DEVNAME}'.service"
